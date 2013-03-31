@@ -19,7 +19,27 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[FreakViewController alloc] initWithNibName: nil bundle:nil];
-    self.window.rootViewController = self.viewController;
+
+    // Override point for customization after application launch.
+
+    
+    // Override point for customization after application launch.
+	self.window.rootViewController = [[UITabBarController alloc] init];
+    
+/*
+	((UITabBarController *)self.window.rootViewController).viewControllers = [NSArray arrayWithObject:
+                                                                              [[FreakViewController alloc] initWithNibName: nil bundle: nil]
+                                                                              ];
+	
+ 
+*/
+    self.window.rootViewController = [[UINavigationController alloc]
+                                      initWithRootViewController: [[FreakViewController alloc]
+                                                                   initWithNibName: nil
+                                                                   bundle: nil
+                                                                   ]
+                                      ];
+
     [self.window makeKeyAndVisible];
     return YES;
 }

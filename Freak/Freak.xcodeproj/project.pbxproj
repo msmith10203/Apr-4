@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7896E0D3170897D0003A7BF4 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 7896E0D2170897D0003A7BF4 /* star.png */; };
 		78EC72131707E5230092858A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EC72121707E5230092858A /* UIKit.framework */; };
 		78EC72151707E5230092858A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EC72141707E5230092858A /* Foundation.framework */; };
 		78EC72171707E5230092858A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EC72161707E5230092858A /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7896E0D2170897D0003A7BF4 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = ../../star.png; sourceTree = "<group>"; };
 		78EC720F1707E5230092858A /* Freak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78EC72121707E5230092858A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		78EC72141707E5230092858A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +100,7 @@
 		78EC72191707E5230092858A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7896E0D2170897D0003A7BF4 /* star.png */,
 				78EC721A1707E5230092858A /* Freak-Info.plist */,
 				78EC721B1707E5230092858A /* InfoPlist.strings */,
 				78EC721E1707E5230092858A /* main.m */,
@@ -165,6 +168,7 @@
 				78EC72251707E5230092858A /* Default.png in Resources */,
 				78EC72271707E5230092858A /* Default@2x.png in Resources */,
 				78EC72291707E5230092858A /* Default-568h@2x.png in Resources */,
+				7896E0D3170897D0003A7BF4 /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +297,7 @@
 				78EC72341707E5230092858A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

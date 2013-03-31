@@ -15,6 +15,27 @@
 
 @implementation FreakViewController
 
+
+- (id) initWithNibName: (NSString *) nibNameOrNil bundle: (NSBundle *) nibBundleOrNil {
+	self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
+	if (self) {
+		// Custom initialization
+		self.title = @"Title";
+		self.tabBarItem.image = [UIImage imageNamed: @"star.png"];
+		self.tabBarItem.badgeValue = @"b";
+        
+        self.navigationItem.prompt = @"Welcome to";
+        self.navigationItem.title = @"More Elaborate Title";
+        
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
+                                                  initWithBarButtonSystemItem: UIBarButtonSystemItemDone
+                                                  target: nil
+                                                  action: NULL
+                                                  ];
+	}
+	return self;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
