@@ -1,13 +1,20 @@
 //
 //  Pearl.h
-//  MySpring
+//  Spring
 //
-//  Created by Mike Smith on 4/3/13.
-//  Copyright (c) 2013 Mike Smith. All rights reserved.
+//  Created by NYU User on 11/17/11.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface Pearl : UIView
+@interface Pearl: UIView {
+	CGPoint location;
+	CGPoint velocity;
+}
 
+- (id) initWithLocation: (CGPoint) p;
+- (void) drag: (CGPoint) p;
+
+@property (nonatomic, assign) CGPoint location;
 @end
